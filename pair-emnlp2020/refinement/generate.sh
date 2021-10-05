@@ -1,0 +1,13 @@
+CUDA_VISIBLE_DEVICES=0 python generate.py \
+    --n-gpus=1 \
+    --domain=fact \
+    --setup=pair-full \
+    --test-set=test \
+    --output-name=test-fact-pos-pair\
+    --enforce-template-strategy=flexible \
+    --sample-times=1 \
+    --sampling-topk=300 \
+    --sampling-topp=0.9 \
+    --do-sampling \
+    --ckpt-dir=../checkpoints/fact-data/full \
+    --fp16

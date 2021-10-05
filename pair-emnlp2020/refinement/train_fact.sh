@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=0 python train.py \
+    --n-gpus=1 \
+    --domain=fact \
+    --setup=pair-full \
+    --train-set=train \
+    --valid-set=valid \
+    --eval-batch-size=5 \
+    --train-batch-size=2 \
+    --num-train-epochs=20 \
+    --ckpt-dir=../checkpoints/fact/full/ \
+    --tensorboard-dir=fact-full \
+    --quiet \
